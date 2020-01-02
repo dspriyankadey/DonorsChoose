@@ -65,4 +65,47 @@ DonorsChoose is a nonprofit organization that allows individuals to donate direc
 ## Objective
 The objective is to predict whether or not a DonorsChoose.org project proposal submitted by a teacher will be approved.
 
+#### t-SNE on Donors Choose the dataset
+<ul>
+<li> Plot t-SNE plots with  feature set categorical, numerical features + text data (BOW,TFIDF,AVG W2V,TFIDF W2V).</li>
+</ul>
+        
+#### KNN on Donors Choose the dataset
+<ul>
+<li> Find the best hyper-parameter using k-fold cross-validation, simple cross-validation, GridSearchCV or RandomizedSearchCV    to get the maximum AUC value.</li></ul>
+        
+#### Naive Bayes on Donors Choose the dataset
+<ul>
+<li>Find the best hyper-parameter using the Gridsearchcv or random search to get the maximum AUC value.
+<li>plotting the ROC curve and print the confusion matrix.
+<li>Find the top features and feature names using values of the `feature_log_prob_` parameter of MultinomialNB.
+</ul>
+        
+#### Logistic Regression on Donors Choose dataset.
+<ul>
+<li>Use bigram BOW and TFIDF in the text data.
+<li>Find the best hyper-parameter using the grid-search-cv or random search to get the maximum AUC value.
+<li>plotting the ROC curve and print the confusion matrix.</ul>
+        
+#### SVM on Donors Choose a dataset
+<ul>
+<li>Find the best hyper-parameter using a grid-search-cv or random search to get the maximum AUC value.
+<li>plotting the ROC curve and print the confusion matrix.</ul>
+
+#### Decision Trees on Donors Choose the dataset
+<ul>
+<li>Find the best hyper-parameter using the grid-search-cv or random search to get the maximum AUC value.
+<li>Visualize the decision tree with Graphviz.</ul>
+
+#### Random Forests GBDT on Donors Choose the dataset
+<ul>
+<li>Find the best hyper-parameter using the grid-search-cv or random search to get the maximum AUC value.
+<li>plotting the ROC curve and print the confusion matrix.</ul>
+
+#### K means Agglomerative DBSCAN clustering algorithms on Donors Choose the dataset: 
+<ul>
+<li>Feature_selection using SelectFromModel        
+<li>K-Means Clustering: Find the best ‘k’ using the elbow-knee method (plot k vs inertia_)
+<li>Agglomerative Clustering: Apply the agglomerative algorithm on a different number of clusters. 
+<li>DBSCAN Clustering: Find the best ‘eps’ using the elbow-knee method.</ul>
 
